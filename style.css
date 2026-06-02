@@ -1102,7 +1102,66 @@ padding: 13px;
       .about-right {
         text-align: center;
       }
+
+      .titre h1 {
+  text-align: center;
+      }
   }
+
+
+  /* Caché sur desktop */
+.valeurs-mobile {
+    display: none;
+}
+
+/* Visible uniquement sur mobile */
+@media (max-width: 768px) {
+    .valeurs-mobile {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 14px;
+        padding: 10px 20px 20px;
+        scrollbar-width: none; 
+        margin-top: 25px;/* cache la scrollbar sur Firefox */
+    }
+
+    .valeurs-mobile::-webkit-scrollbar {
+        display: none; /* cache la scrollbar sur Chrome */
+    }
+
+    .valeur-card {
+        min-width: 160px;
+        flex-shrink: 0;
+        background: #f7faf4;
+        border-radius: 12px;
+        border-top: 3px solid #314D1C;
+        padding: 20px 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .valeur-card strong {
+        font-size: 14px;
+        color: #1a1a1a;
+    }
+
+    .valeur-card p {
+        font-size: 12px;
+        color: #555;
+        line-height: 1.5;
+        margin: 0;
+        max-width: 160px;
+    }
+
+    /* Cacher les valeurs desktop sur mobile */
+    .valeurs {
+        display: none;
+    }
+}
 
 
 

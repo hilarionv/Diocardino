@@ -893,6 +893,14 @@ color: #7dc97d;
  width: 100%;
 }
 
+.masque {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    
+  }
+
 .product-card {
     background: transparent;
     padding: 20px;
@@ -1055,18 +1063,43 @@ color: #7dc97d;
   /* PETIT MOBILE (max 480px) */
   @media (max-width: 480px) {
     .p2 { font-size: 28px; line-height: 32px; }
-    .about { padding: 20px 15px; }
-    .services { padding: 20px 15px; }
+    .about { padding: 20px 15px; display: flex; flex-direction: column; }
+    .services { padding: 20px 15px; text-align: center; display: flex; flex-direction: column; align-items: center;}
     .contact { padding: 20px 15px; }
     footer { padding: 20px 15px; }
-    .projet-accroche { font-size: 24px; }
+    .projet-accroche { font-size: 23px; }
+    .projet-header{
+        align-items: center;
+        text-align: center;
+    }
 
 
     main {
         position: relative;
 background-color: white;
+background-size: 0px 0px;
+padding: 20px;
     }
+
+    .service-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .masque {
+        display: block;
+      }
+
+      .desactive {
+        display: none;
+      }
   }
+
+
+
+
 
 
   

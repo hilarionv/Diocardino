@@ -1064,7 +1064,7 @@ color: #7dc97d;
   @media (max-width: 480px) {
     .p2 { font-size: 28px; line-height: 32px; }
     .about { padding: 20px 15px; display: flex; flex-direction: column; }
-    .services { padding: 20px 15px; text-align: center; display: flex; flex-direction: column; align-items: center;}
+    .services { padding: 20px 15px; text-align: center; display: flex; flex-direction: column; }
     .contact { padding: 20px 15px; }
     footer { padding: 20px 15px; }
     .projet-accroche { font-size: 23px; }
@@ -1078,7 +1078,7 @@ color: #7dc97d;
         position: relative;
 background-color: white;
 background-size: 0px 0px;
-padding: 20px;
+padding: 13px;
     }
 
     .service-header {
@@ -1088,12 +1088,19 @@ padding: 20px;
         margin-bottom: 10px;
     }
 
+  .service-info{
+    text-align: start;
+  }
     .masque {
         display: block;
       }
 
       .desactive {
         display: none;
+      }
+
+      .about-right {
+        text-align: center;
       }
   }
 

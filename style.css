@@ -1061,7 +1061,7 @@ color: #7dc97d;
   
     /* BLOG */
     .blog { padding: 30px 10px; }
-    .product-card { width: 80%; }
+    .product-card { width: 100%; }
     .product-card img { height: 200px; }
     .product-card h3 { font-size: 14px; }
   }
@@ -1185,3 +1185,23 @@ padding: 13px;
 
 
 
+
+@media (max-width: 480px) {
+    .service-cards {
+        flex-direction: row;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        scrollbar-width: none;
+        padding-bottom: 10px;
+    }
+
+    .service-cards::-webkit-scrollbar {
+        display: none;
+    }
+
+    .service-card {
+        min-width: 260px;
+        flex-shrink: 0;
+        height: 300px;
+    }
+}

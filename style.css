@@ -324,7 +324,14 @@ color: black;
 
 
 
-
+header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
 
 .about .titre {
     align-items: flex-end;
@@ -952,7 +959,7 @@ color: #7dc97d;
 
     /* NAVBAR */
     .navbar ul { display: none; }
-    .burger { display: flex; }
+    .burger { display: flex; padding-right: 10px;}
   
     /* HERO */
     .p2 { font-size: 48px; line-height: 46px; }
@@ -1106,6 +1113,11 @@ padding: 13px;
       .titre h1 {
   text-align: center;
       }
+      .contact-content {
+      
+        background-image: url('images/IMG_4129.JPG'); /* ← remplace ici */
+       
+    }
   }
 
 

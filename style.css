@@ -46,8 +46,8 @@ main {
     justify-content: space-between;
     align-items: center;
   gap: 60px;
-    background-color: darkgreen;
-    color: white;
+    background-color: #faf9f6;
+    color: black;
     padding: 0 10px;
     
 }
@@ -64,7 +64,7 @@ font-size: 13px;
 .reseau  a{
  text-decoration: none;
  font-size: 18px;
- color: white;
+ color: black;
 }
 
 
@@ -1492,7 +1492,7 @@ padding: 13px;
 
 /* MASTERCLASS */
 .masterclass {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     padding: 60px 80px;
@@ -1520,7 +1520,7 @@ padding: 13px;
     display: flex;
     gap: 14px;
     margin-top: 5px;
-    background-color: #e8c97a;
+    background-color: black;
     padding: 50px;
     border-radius: 10px;
 }
@@ -1549,7 +1549,7 @@ padding: 13px;
 }
 
 .masterclass-right img {
-    width: 100%;
+
     height: 450px;
     object-fit: cover;
     object-position: top;
@@ -1560,9 +1560,13 @@ padding: 13px;
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .masterclass {
+        display: block;
         flex-direction: column;
         padding: 30px 20px;
         gap: 30px;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
     }
 
     .masterclass-left {
@@ -1571,12 +1575,29 @@ padding: 13px;
     }
 
     .masterclass-right img {
-        height: 500px;
+        min-height: 620px;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .reseau-masterclass a {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid #314D1C;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 16px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        background-color: #314D1C;
     }
 }
 
 @media (max-width: 480px) {
-    .masterclass { padding: 20px 15px; }
+    .masterclass {  padding: 20px 15px; }
     .masterclass-right img { height: 400px; }
 }
 

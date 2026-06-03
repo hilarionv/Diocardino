@@ -408,6 +408,11 @@ color: black;
     position: relative;
 }
 
+.about-mobile-top,
+.about-mobile-bottom {
+    display: none;
+}
+
 .fondateur-caption {
     padding: 16px;
     display: flex;
@@ -1415,14 +1420,12 @@ padding: 13px;
     }
 }
 
-/* Cache sur desktop */
-.about-mobile-top,
-.about-mobile-bottom {
-    display: none;
-}
 
 
-@media (max-width: 480px) {
+.fondateur-caption {}
+
+
+@media (max-width: 768px) {
     .about-mobile-top {
         display: block;
         position: absolute;

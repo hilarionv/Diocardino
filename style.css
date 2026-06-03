@@ -1430,7 +1430,7 @@ padding: 13px;
     .about-mobile-top {
         display: block;
         position: absolute;
-        top: 205px;      /* ← déborde plus en haut */
+        top: 210px;      /* ← déborde plus en haut */
         right: 20px;    /* ← à droite */
         left: auto;
         z-index: 15;

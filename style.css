@@ -714,7 +714,8 @@ color: black;
     height: 100%;
     object-fit: cover;  /* ← montre toute l'image */
     display: block;
-padding: 7px;
+padding: 4px;
+border-radius: 10px;
 }
 
 

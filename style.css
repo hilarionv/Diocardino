@@ -741,7 +741,7 @@ background-color: #f7faf4;
     min-height: 600px;
     border-radius: 16px;
     overflow: hidden;
-    background-image: url('images/Photoroom_20260602_170252.JPG'); /* ← remplace ici */
+    background-image: url('images/IMG_4134.JPG'); /* ← remplace ici */
     background-size: cover;
     background-position: center;
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
@@ -1177,7 +1177,7 @@ color: #7dc97d;
   
     /* CONTACT */
     .contact { padding: 20px 15px; }
-    .contact-content { background-image: url('images/IMG_4129.JPG'); }
+    .contact-content { background-image: url('images/IMG_4134.JPG'); }
   
     /* FOOTER */
     footer { padding: 20px 15px; }
@@ -1224,11 +1224,15 @@ padding: 13px;
     }
 
     .carré {
-        width: 0px;
-        height: 0px;
-  
+        width: 290px;
+        height: 220px;
+        background-color: #FEFAE0;
+        position: absolute;
+        z-index: 1;
+        left: 15px;
+        bottom: 580px;
+        border-radius: 10px;
     }
-
   .service-info{
     text-align: start;
   }
@@ -1249,7 +1253,7 @@ padding: 13px;
       }
       .contact-content {
       
-        background-image: url('images/IMG_4129.JPG'); /* ← remplace ici */
+        background-image: url('images/IMG_4134.JPG'); /* ← remplace ici */
        
     }
 

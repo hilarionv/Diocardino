@@ -1422,14 +1422,14 @@ padding: 13px;
 
 
 
-.fondateur-caption {}
+
 
 
 @media (max-width: 768px) {
     .about-mobile-top {
         display: block;
         position: absolute;
-        top: 200px;      /* ← déborde plus en haut */
+        top: 205px;      /* ← déborde plus en haut */
         right: 20px;    /* ← à droite */
         left: auto;
         z-index: 15;

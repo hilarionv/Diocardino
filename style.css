@@ -1345,6 +1345,14 @@ padding: 13px;
         flex-shrink: 0;
         height: 300px;
     }
+
+    .service-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;  /* ← montre toute l'image */
+        display: block;
+    padding: 3px;
+    }
 }
 
 

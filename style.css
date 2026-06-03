@@ -1224,8 +1224,8 @@ padding: 13px;
     }
 
     .carré {
-        width: 290px;
-        height: 220px;
+        width: 0px;
+        height: 0px;
         background-color: #FEFAE0;
         position: absolute;
         z-index: 1;
@@ -1279,7 +1279,7 @@ padding: 13px;
         gap: 14px;
         padding: 10px 20px 20px;
         scrollbar-width: none; 
-        margin-top: 25px;/* cache la scrollbar sur Firefox */
+        padding-top: 175px;/* cache la scrollbar sur Firefox */
     }
 
     .valeurs-mobile::-webkit-scrollbar {
@@ -1414,4 +1414,78 @@ padding: 13px;
         font-size: 13px;
     }
 }
+
+/* Cache sur desktop */
+.about-mobile-top,
+.about-mobile-bottom {
+    display: none;
+}
+
+
+@media (max-width: 480px) {
+    .about-mobile-top {
+        display: block;
+        position: absolute;
+        top: 200px;      /* ← déborde plus en haut */
+        right: 20px;    /* ← à droite */
+        left: auto;
+        z-index: 15;
+        background: #f5f0e8;
+        padding: 10px 14px;
+        border-radius: 8px;
+        max-width: 160px; /* ← plus petit */
+        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    .about-mobile-top h1 {
+        font-size: 11px;
+        margin: 0;
+    }
+      /* Cache seulement le texte, pas le titre */
+      .about-left .a-propos,
+      .about-left .valeurs,
+      .about-left .cta-link {
+          display: none;
+      }
+
+    .about-mobile-top p {
+        font-size: 10px;
+        margin: 4px 0 0 0;
+        line-height: 1.4;
+    }
+
+    .about-mobile-bottom {
+        display: block;
+        position: absolute;
+        bottom: 400px;   /* ← déborde plus en bas */
+        left: 4px;
+        z-index: 15;
+        background: #e8c97a;
+        padding: 10px 14px;
+        border-radius: 8px;
+        max-width: 160px; /* ← plus petit */
+        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    .about-mobile-bottom .citation {
+        font-size: 10px;
+        margin: 0 0 4px 0;
+        color: white;
+    }
+
+    .about-mobile-bottom .titre-poste {
+        font-size: 14px;
+    
+        color: black;
+    }
+
+    .about-mobile-bottom h2 {
+        font-size: 10px;
+        margin: 0;
+    }
+}
+
+
+
+
 

@@ -1184,7 +1184,11 @@ color: #7dc97d;
   
     /* MAIN */
     main { position: relative; background-color: white; background-size: 0px 0px; padding: 13px; }
-  
+    .reseau  a{
+        text-decoration: none;
+        font-size: 16px;
+        color: white;
+       }
     /* DIVERS */
     .carré { width: 0px; height: 0px; }
     .masque { display: block; }
@@ -1222,12 +1226,7 @@ padding: 13px;
     .carré {
         width: 0px;
         height: 0px;
-        background-color: #FEFAE0;
-        position: absolute;
-        z-index: 1;
-        right: 50px;
-        bottom: 200px;
-        border-radius: 10px;
+  
     }
 
   .service-info{
@@ -1253,6 +1252,12 @@ padding: 13px;
         background-image: url('images/IMG_4129.JPG'); /* ← remplace ici */
        
     }
+
+
+    .top2 p {
+        font-size: 11px;
+            
+        }
   }
 
 
@@ -1351,7 +1356,8 @@ padding: 13px;
         height: 100%;
         object-fit: cover;  /* ← montre toute l'image */
         display: block;
-    padding: 3px;
+    padding: 1px;
+    border-radius: 10px;
     }
 }
 

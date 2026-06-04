@@ -1704,6 +1704,154 @@ width: 100%;
 }
 
 
+.services-hero {
+    height: 400px;
+    position: relative;
+    background-image: url('images/Photoroom_20260423_142145.PNG');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.services-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.services-hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+   
+}
+
+.services-label {
+    color: #7ec87e;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+.services-hero-content h1 {
+    font-size: 52px;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+}
+
+.services-subtitle {
+    font-size: 16px;
+    opacity: 0.85;
+}
+
+/* SERVICES MAIN */
+.services-main {
+    padding: 80px 0;
+}
+
+.service-row {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    padding: 60px 80px;
+}
+
+.service-row.alt-bg {
+    background-color: #f7faf4;
+}
+
+.service-row.reverse .service-img {
+    order: 2;
+}
+
+.service-row.reverse .service-text {
+    order: 1;
+}
+
+.service-img {
+    flex: 1;
+}
+
+.service-img img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+.service-text {
+    flex: 1;
+    padding: 40px 60px;
+}
+
+.service-icon {
+    font-size: 36px;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.service-text h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #314D1C;
+    margin: 0 0 20px 0;
+   
+}
+
+.service-text p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 32px;
+}
+
+.service-btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: #314D1C;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.service-btn:hover {
+    background-color: #4a7a2a;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .service-row {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .service-row.reverse .service-img,
+    .service-row.reverse .service-text {
+        order: unset;
+    }
+
+    .service-img img {
+        height: 250px;
+    }
+
+    .service-text {
+        padding: 24px 0;
+    }
+
+    .service-text h2 {
+        font-size: 24px;
+    }
+}
+
+
+
 
 
 

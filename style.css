@@ -1794,6 +1794,7 @@ width: 100%;
 
 .service-img {
     flex: 1;
+    width: 100%;
 }
 
 .service-img img {

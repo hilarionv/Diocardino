@@ -1369,6 +1369,22 @@ padding: 13px;
     padding: 1px;
     border-radius: 10px;
     }
+
+    .services-page .top1,
+    .projets-page .top1,
+    .blog-page .top1,
+    .contact-page .top1 {
+        height: 500px;
+    padding-top: 170px;
+    }
+
+    .services-page .overlay,
+    .projets-page .overlay,
+    .blog-page .overlay,
+    .contact-page .overlay {
+        height: 248px;
+    padding-top: 170px;
+    }
 }
 
 
@@ -1682,7 +1698,12 @@ width: 100%;
 }
 
 
+
+
+
 @media (max-width: 768px) {
+
+
     .project {
         padding: 40px 20px;
     }
@@ -1848,6 +1869,9 @@ width: 100%;
     .service-text h2 {
         font-size: 24px;
     }
+
+
+
 }
 
 

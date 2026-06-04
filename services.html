@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oasis agricole - Consultance Agricole</title>
+<link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css">
+
+
+</head>
+<body>
+    <header> 
+
+        <div class="top2">
+          <p>Contactez-nous maintenant au <strong>776542678</strong></p>
+            <div class="reseau">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+        <div class="top">
+            <div class="logo">
+       <a href=""><img src="images/IMG_3484.PNG" alt="" srcset=""></a>
+            </div>
+        
+            <nav class="navbar" style="padding-right: 20px;">
+                <ul>
+                    <li><a href="index.html" class="link-hover">Acceuil</a></li>
+                    <li><a href="services.html" class="link-hover">Services</a></li>
+                    <li><a href="projets.html" class="link-hover">Projets</a></li>
+                    <li><a href="blog.html" class="link-hover">Blog</a></li>
+                    <li><a href="contact.html" class="link-hover">Contact</a></li>
+                </ul>
+            </nav>
+
+
+            <div class="burger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <!-- PANIER + BURGER groupés ensemble -->
+     
+        
+            <div class="full-menu" id="fullMenu">
+                <span onclick="toggleMenu()" style="color: black; padding-bottom: 60px; font-weight: 700; font-size: 20px; cursor: pointer;">X</span>
+                <a href="index.html" onclick="toggleMenu()">Acceuil</a>
+            
+                <a href="services.html" onclick="toggleMenu()">Services</a>
+                <a href="projets.html" onclick="toggleMenu()">Projets</a>
+                <a href="blog.html" onclick="toggleMenu()">Blog</a>
+                <a href="contact.html" onclick="toggleMenu()">Contact</a>
+            </div>
+
+    
+        </div>
+  
+        
+
+     
+    </header>
+    <div class="top1">
+        <div class="overlay"></div>
+        <div class="pp">
+            <p class="p1">OASIS AGRICOLE</h3>
+            <p class="p2">SIMPLIFIONS <br>L'AGRICULTURE</h1>
+     
+      
+        <p class="p3">Conseil, accompagnement et stratégies durables  pour <br> améliorer vos performances agricoles</p>
+        <div class="button">
+            <a href="" class="button1">Consultation</a>
+            <a href="" class="button2">Services</a>
+        </div>
+
+    </div>
+
+    </div>
+<main></main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <a href=""><img src="images/IMG_3484.PNG" alt="" srcset=""></a>
+                   
+                </div>
+                <p>Conseil et accompagnement pour une agriculture durable et performante en Afrique.</p>
+            </div>
+            <div class="footer-col">
+                <h5>Navigation</h5>
+                <a href="#">Accueil</a>
+                <a href="#">Services</a>
+                <a href="#">Projets</a>
+                <a href="#">Blog</a>
+            </div>
+            <div class="footer-col">
+                <h5>Services</h5>
+                <a href="#">Consultance</a>
+                <a href="#">Assistance</a>
+                <a href="#">Diagnostics</a>
+                <a href="#">Formation</a>
+            </div>
+            <div class="footer-col">
+                <h5>Contact</h5>
+                <a href="#">Dakar, Sénégal</a>
+                <a href="#">+221 77 000 00 00</a>
+                <a href="#">contact@oasisagricole.sn</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Oasis Agricole. Tous droits réservés.</p>
+            <div class="social-links">
+                <a href="#" class="social-link">in</a>
+                <a href="#" class="social-link">fb</a>
+                <a href="#" class="social-link">ig</a>
+            </div>
+        </div>
+    </footer>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script>
+  new Splide('.splide', {
+    type       : 'loop',
+    perPage    : 3,
+    perMove    : 1,
+    gap        : '1.5rem',
+    breakpoints: {
+      1024: { perPage: 2 },
+      640 : { perPage: 1 },
+    }
+  }).mount();
+</script>
+</body>
+</html>
